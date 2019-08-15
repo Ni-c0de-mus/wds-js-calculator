@@ -21,4 +21,71 @@
   --pacifico: "Pacifico", cursive;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  background: linear-gradient(to right, #b92b27, #1565C0);
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  min-height: 80vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid #fff;
+  outline: none;
+  background-color: var(--tomato-color);
+  color: var(--yellow-color);
+}
+
+.calculator-grid > button:hover {
+  background-color: var(--magenta-color);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.ouput {
+  grid-column: 1fr;
+  background-color:rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: var(--light-orange);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: var(--light-orange);
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 
